@@ -1,0 +1,70 @@
+/*main page/body*/
+body {
+    margin: 0;                    
+    font-family: Arial, sans-serif;
+    background-color: #1b1f1b;
+    color: #e5e5d8;
+}
+
+/*headers v1*/
+header {
+    background-color: #2e3b2e;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #6b8e23;
+}
+
+/*menu bar!*/
+nav {
+    text-align: center;            
+    padding: 1rem;                 
+    background-color: #1b1f1b;    
+}
+
+/*navigation links for the menu bar*/
+nav a {
+    color: #c2b280;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*sections*/
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*cards for individual blocks*/
+.card {
+    background-color: #2e3b2e;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #6b8e23;
+}
+
+/*headers v2 colors*/
+h2 {
+    color: #6b8e23;
+}
+
+/*image section (for when we add some)*/
+img {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+/*custom layout for team members*/
+.team {
+    display: flex;                     
+    justify-content: space-between;    /*spread out team members on site*/
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e3b2e;
+    border-top: 2px solid #6b8e23;
+}
