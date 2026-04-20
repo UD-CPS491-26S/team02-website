@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Drone Phone Dashboard | CPS 491</title>
-    <link rel="stylesheet" href="styles.css"> <!--reference the css file for the fancy things and make it "sexy"-->
-</head>
+    <link rel="stylesheet" href="styles.css"> </head>
 <body>
 
- <!--header of page-->   
 <header>
-    <h1>Drone Phone Dashboard</h1>
-    <p>CPS 491 – Capstone II | Spring 2026</p>
+    <div class="header-container">
+        <img src="assets/UDLogo.png" alt="UD Logo" class="header-logo">
+        <div class="header-text">
+            <h1>Drone Phone Dashboard</h1>
+            <p>CPS 491 – Capstone II | Spring 2026</p>
+        </div>
+    </div>
 </header>
 
-<!--add bar for shortcuts to each section on website-->
 <nav>
     <a href="#about">About us</a>
     <a href="#sprints">Sprints</a>
@@ -27,6 +29,11 @@
     <p>
         We are creating an updated dashboard for the Drone Phone that encapsulates an easy user experience for digesting and understanding data monitored in real time.
     </p>
+
+    <div class="main-visual">
+        <img src="assets/techstack.png" alt="System Architecture" class="large-stack-img">
+        <p class="caption">System Architecture & Integration Overview</p>
+    </div>
 </section>
 
 <section id="sprints">
@@ -56,45 +63,52 @@
     </div>
 </section>
 
-
-
 <section id="tech">
     <h2>Tech Stack</h2>
     <div class="card">
         <h3>Sprint 1</h3>
-        <ul>
-            <!-- hyperlink taky repo because why not -->
-            <li>Python 3 and <a href="https://github.com/tkuester/taky" target="_blank">TAKy</a></li>
-            <li>Docker</li>
-            <li>FastAPI</li>
-            <li>React</li>
-            <li>Leaflet</li>
-            <li>OpenStreetMap</li>
+        <ul class="tech-list">
+            <li>
+                <img src="assets/PyLogo.png" alt="Python">
+                Python 3 and <a href="https://github.com/tkuester/taky" target="_blank">TAKy</a>
+            </li>
+            <li>
+                <img src="assets/docker.png" alt="Docker">
+                Docker
+            </li>
+            <li>
+                <img src="assets/fastapi.png" alt="FastAPI">
+                FastAPI
+            </li>
+            <li>
+                <img src="assets/react.png" alt="React">
+                React
+            </li>
+            <li>
+                <img src="assets/techstack.png" alt="Leaflet">
+                Leaflet / OpenStreetMap
+            </li>
         </ul>
     </div>
 </section>
 
-
-
-    
 <section id="diagrams">
     <h2>System Diagrams</h2>
 
     <div class="card">
         <h3>Data Flow Diagram</h3>
-         <img src="assets/DataFlow1.drawio.png" alt="Data Flow Diagram">
+        <img src="assets/DataFlow1.drawio.png" alt="Data Flow Diagram">
     </div>
 
     <div class="card">
         <h3>Use Case Diagram</h3>
-         <img src="assets/UseCases1.png" alt="Use Case Diagram">
+        <img src="assets/UseCases1.png" alt="Use Case Diagram">
     </div>
 </section>
 
 <section id="team">
     <h2>Meet the Team</h2>
 
-    <!-- perhaps add headshots to be more fancy??? -->
     <div class="team">
         <div>
             <h3>Cameron Reynes</h3>
@@ -111,4 +125,3 @@
 
 </body>
 </html>
-<!--end of index-->
