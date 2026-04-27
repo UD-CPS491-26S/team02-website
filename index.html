@@ -114,35 +114,60 @@
     <div class="card diagram-card">
       <h3>Data Flow Diagram</h3>
       <div class="diagram-wrapper">
-        <img src="assets/DataFlow1.drawio.png" alt="Data Flow Diagram" class="diagram-img">
+        <img
+          src="assets/DataFlow1.drawio.png"
+          data-full="assets/DataFlow1.drawio.png"
+          alt="Data Flow Diagram"
+          class="diagram-img zoomable"
+        >
       </div>
     </div>
 
     <div class="card diagram-card">
       <h3>Activity Diagram</h3>
       <div class="diagram-wrapper">
-        <img src="assets/Activity Diagram V1-1.png" alt="Activity Diagram" class="diagram-img">
+        <img
+          src="assets/Activity Diagram V1-1.png"
+          data-full="assets/Activity Diagram V1-1.png"
+          alt="Activity Diagram"
+          class="diagram-img zoomable"
+        >
       </div>
     </div>
 
     <div class="card diagram-card">
       <h3>Component/Architecture Diagram</h3>
       <div class="diagram-wrapper">
-        <img src="assets/Component Diagram V1-1.png" alt="Component Diagram" class="diagram-img">
+        <img
+          src="assets/Component Diagram V1-1.png"
+          data-full="assets/Component Diagram V1-1.png"
+          alt="Component/Architecture Diagram"
+          class="diagram-img zoomable"
+        >
       </div>
     </div>
 
     <div class="card diagram-card">
       <h3>Sequence Diagram</h3>
       <div class="diagram-wrapper">
-        <img src="assets/Sequence Diagram V1-1.png" alt="Sequence Diagram" class="diagram-img">
+        <img
+          src="assets/Sequence Diagram V1-1.png"
+          data-full="assets/Sequence Diagram V1-1.png"
+          alt="Sequence Diagram"
+          class="diagram-img zoomable"
+        >
       </div>
     </div>
 
     <div class="card diagram-card">
       <h3>Use Case Diagram</h3>
       <div class="diagram-wrapper">
-        <img src="assets/Use Case Diagram V1-1.png" alt="Use Case Diagram" class="diagram-img">
+        <img
+          src="assets/Use Case Diagram V1-1.png"
+          data-full="assets/Use Case Diagram V1-1.png"
+          alt="Use Case Diagram"
+          class="diagram-img zoomable"
+        >
       </div>
     </div>
   </section>
@@ -171,5 +196,50 @@
   <footer>
     <p>&copy; 2026 Drone Phone Project Team | University of Dayton</p>
   </footer>
+
+  <!-- added javascript to actually be able to look at the diagrams because they're so large-->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Expanded diagram">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" alt="">
+    </div>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+    }
+
+    document.querySelectorAll('img.zoomable').forEach(img => {
+      img.addEventListener('click', () => {
+        openLightbox(img.dataset.full || img.src, img.alt);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    //click outside image closes
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    //ESC closes
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  </script>
 </body>
 </html>
