@@ -1,162 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Drone Phone Dashboard | CPS 491</title>
-<link rel="stylesheet" href="styles.css"> </head>
+  <meta charset="UTF-8" />
+  <title>Drone Phone Dashboard | CPS 491</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
+  <header>
+    <div class="header-container">
+      <img src="assets/UDLogo.png" alt="UD Logo" class="header-logo">
+      <div class="header-text">
+        <h1>Drone Phone Dashboard</h1>
+        <p>CPS 491 – Capstone II | Spring 2026</p>
+      </div>
+    </div>
+  </header>
 
-<header>
-<div class="header-container">
-<img src="assets/UDLogo.png" alt="UD Logo" class="header-logo">
-<div class="header-text">
-<h1>Drone Phone Dashboard</h1>
-<p>CPS 491 – Capstone II | Spring 2026</p>
-</div>
-</div>
-</header>
+  <nav>
+    <a href="#about">About us</a>
+    <a href="#sprints">Sprints</a>
+    <a href="#tech">Tech Stack</a>
+    <a href="#diagrams">Diagrams</a>
+    <a href="#team">Team</a>
+  </nav>
 
-<nav>
-<a href="#about">About us</a>
-<a href="#sprints">Sprints</a>
-<a href="#tech">Tech Stack</a>
-<a href="#diagrams">Diagrams</a>
-<a href="#team">Team</a>
-</nav>
+  <section id="about">
+    <h2>Mission Overview</h2>
+    <p>
+      We are creating an updated dashboard for the Drone Phone that encapsulates an easy user experience for digesting and understanding data monitored in real time.
+    </p>
 
-<section id="about">
-<h2>Mission Overview</h2>
-<p>
-We are creating an updated dashboard for the Drone Phone that encapsulates an easy user experience for digesting and understanding data monitored in real time.
-</p>
+    <div class="main-visual">
+      <img src="assets/techstack.png" alt="System Architecture" class="large-stack-img">
+      <p class="caption">System Architecture &amp; Integration Overview</p>
+    </div>
 
-<div class="main-visual">
-<img src="assets/techstack.png" alt="System Architecture" class="large-stack-img">
-<p class="caption">System Architecture & Integration Overview</p>
-</div>
+    <div class="main-visual">
+      <div class="video-wrapper">
+        <video class="demo-video" controls>
+          <source src="assets/Drone Dashboard Demo 2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="caption">Dashboard Demo Video</p>
+    </div>
+  </section>
 
-<div class="main-visual">
-<video class="demo-video" controls>
-<source src="assets/Drone Dashboard Demo 2.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<p class="caption">Dashboard Demo Video</p>
-</div>
-</section>
+  <section id="sprints">
+    <h2>Software Process Management (SCRUM)</h2>
 
-<section id="sprints">
-<h2>Software Process Management (SCRUM)</h2>
+    <div class="card">
+      <h3>Sprint 1</h3>
+      <ul>
+        <li>Baseline dashboard up and running</li>
+        <li>Researched architecture to find a clear path for a deliverable</li>
+        <li>Diagram planning</li>
+      </ul>
+    </div>
 
-<div class="card">
-<h3>Sprint 1</h3>
-<ul>
-<li>Baseline dashboard up and running</li>
-<li>Researched architecture to find a clear path for a deliverable</li>
-<li>Diagram planning</li>
-</ul>
-</div>
+    <div class="card">
+      <h3>Sprint 2</h3>
+      <ul>
+        <li>Successful launch of backend TAKy server</li>
+        <li>CoT (Cursor on Target) to JSON encode/decode software</li>
+        <li>Created this website</li>
+        <li>Updated dashboard specifics</li>
+      </ul>
+    </div>
 
-<div class="card">
-<h3>Sprint 2</h3>
-<ul>
-<li>Successful launch of backend TAKy server</li>
-<li>CoT (Cursor on Target) to JSON encode/decode software</li>
-<li>Created this website</li>
-<li>Updated dashboard specifics</li>
-</ul>
-</div>
+    <div class="card">
+      <h3>Sprint 3</h3>
+      <ul>
+        <li>Additional diagramming</li>
+        <li>Documentation on work process and obtaining TAKy server certificates for backend</li>
+        <li>Connection/bridging of frontend dashboard and backend data</li>
+      </ul>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Sprint 3</h3>
-<ul>
-<li>Additional diagramming/li>
-<li>Documentation on work process and obtaining TAKy server certificates for backend</li>
-<li>Connection/bridging of frontend dashboard and backend data</li>
-</ul>
-</div>
-</section>
+  <section id="tech">
+    <h2>Tech Stack</h2>
+    <div class="card">
+      <h3>Development Tools</h3>
+      <ul class="tech-list">
+        <li>
+          <img src="assets/PyLogo.png" alt="Python">
+          <span>Python 3 and <a href="https://github.com/tkuester/taky" target="_blank" rel="noopener noreferrer">TAKy</a></span>
+        </li>
+        <li>
+          <img src="assets/docker.png" alt="Docker">
+          <span>Docker Containerization</span>
+        </li>
+        <li>
+          <img src="assets/fastapi.png" alt="FastAPI">
+          <span>FastAPI Backend</span>
+        </li>
+        <li>
+          <img src="assets/react.png" alt="React">
+          <span>React Frontend</span>
+        </li>
+        <li>
+          <img src="assets/leafletlogo.png" alt="Leaflet">
+          <span>Leaflet &amp; OpenStreetMap</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<section id="tech">
-<h2>Tech Stack</h2>
-<div class="card">
-<h3>Development Tools</h3>
-<ul class="tech-list">
-<li>
-<img src="assets/PyLogo.png" alt="Python">
-<span>Python 3 and <a href="https://github.com/tkuester/taky" target="_blank">TAKy</a></span>
-</li>
-<li>
-<img src="assets/docker.png" alt="Docker">
-<span>Docker Containerization</span>
-</li>
-<li>
-<img src="assets/fastapi.png" alt="FastAPI">
-<span>FastAPI Backend</span>
-</li>
-<li>
-<img src="assets/react.png" alt="React">
-<span>React Frontend</span>
-</li>
-<li>
-<img src="assets/techstack.png" alt="Leaflet">
-<span>Leaflet & OpenStreetMap</span>
-</li>
-</ul>
-</div>
-</section>
+  <section id="diagrams">
+    <h2>System Diagrams</h2>
 
-<section id="diagrams">
-<h2>System Diagrams</h2>
+    <div class="card diagram-card">
+      <h3>Data Flow Diagram</h3>
+      <div class="diagram-wrapper">
+        <img src="assets/DataFlow1.drawio.png" alt="Data Flow Diagram" class="diagram-img">
+      </div>
+    </div>
 
-<div class="card">
-<h3>Data Flow Diagram</h3>
-<img src="assets/DataFlow1.drawio.png" alt="Data Flow Diagram">
-</div>
+    <div class="card diagram-card">
+      <h3>Activity Diagram</h3>
+      <div class="diagram-wrapper">
+        <iframe src="assets/Activity Diagram V1.pdf" class="diagram-pdf" title="Activity Diagram"></iframe>
+      </div>
+    </div>
 
-<div class="card">
-<h3>Activity Diagram</h3>
-<iframe src="assets/Activity Diagram V1.pdf" class="diagram-pdf" title="Activity Diagram"></iframe>
-</div>
+    <div class="card diagram-card">
+      <h3>Component/Architecture Diagram</h3>
+      <div class="diagram-wrapper">
+        <iframe src="assets/Component Diagram V1.pdf" class="diagram-pdf" title="Component Diagram"></iframe>
+      </div>
+    </div>
 
-<div class="card">
-<h3>Component/Architecture Diagram</h3>
-<iframe src="assets/Component Diagram V1.pdf" class="diagram-pdf" title="Component Diagram"></iframe>
-</div>
+    <div class="card diagram-card">
+      <h3>Sequence Diagram</h3>
+      <div class="diagram-wrapper">
+        <iframe src="assets/Sequence Diagram V1.pdf" class="diagram-pdf" title="Sequence Diagram"></iframe>
+      </div>
+    </div>
 
-<div class="card">
-<h3>Sequence Diagram</h3>
-<iframe src="assets/Sequence Diagram V1.pdf" class="diagram-pdf" title="Sequence Diagram"></iframe>
-</div>
+    <div class="card diagram-card">
+      <h3>Use Case Diagram</h3>
+      <div class="diagram-wrapper">
+        <iframe src="assets/Use Case Diagram V1.pdf" class="diagram-pdf" title="Use Case Diagram PDF"></iframe>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Use Case Diagram</h3>
-<iframe src="assets/Use Case Diagram V1.pdf" class="diagram-pdf" title="Use Case Diagram PDF"></iframe>
-</div>
-</section>
+  <section id="team">
+    <h2>Meet the Team</h2>
 
-<section id="team">
-<h2>Meet the Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="assets/Reynes_Cameron_Headshot.jpg" alt="Cameron Reynes" class="team-headshot">
+        <h3>Cameron Reynes</h3>
+      </div>
 
-<div class="team">
-<div>
-<img src="assets/Reynes_Cameron_Headshot.jpg" alt="Cameron Reynes" class="team-headshot">
-<h3>Cameron Reynes</h3>
-</div>
+      <div class="team-member">
+        <img src="assets/Pruett_Thomas_Headshot.jpg" alt="Thomas Pruett" class="team-headshot">
+        <h3>Thomas Pruett</h3>
+      </div>
 
-<div>
-<img src="assets/Pruett_Thomas_Headshot.jpg" alt="Thomas Pruett" class="team-headshot">
-<h3>Thomas Pruett</h3>
-</div>
-<div>
-<img src="assets/Colon_Adriel_Headshot.JPG" alt="Adriel Colon" class="team-headshot">
-<h3>Adriel Colon</h3>
-</div>
-</div>
-</section>
+      <div class="team-member">
+        <img src="assets/Colon_Adriel_Headshot.JPG" alt="Adriel Colon" class="team-headshot">
+        <h3>Adriel Colon</h3>
+      </div>
+    </div>
+  </section>
 
-<footer>
-<p>&copy; 2026 Drone Phone Project Team | University of Dayton</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2026 Drone Phone Project Team | University of Dayton</p>
+  </footer>
 </body>
 </html>
