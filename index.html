@@ -197,7 +197,7 @@
     <p>&copy; 2026 Drone Phone Project Team | University of Dayton</p>
   </footer>
 
-  <!-- added javascript to actually be able to look at the diagrams because they're so large-->
+  <!-- added javascript to actually be able to look at the diagrams because they're so large???? extremely annoying process.-->
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Expanded diagram">
       <button class="lightbox-close" aria-label="Close">&times;</button>
@@ -218,12 +218,19 @@
       return;
     }
 
-    function openLightbox(src, alt) {
-      lightboxImg.src = src;
-      lightboxImg.alt = alt || '';
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-    }
+  function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || '';
+    
+  lightboxImg.onload = () => {
+  const ar = lightboxImg.naturalWidth / lightboxImg.naturalHeight;
+  lightboxImg.style.setProperty('--img-ar', ar);
+  };
+
+
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+}
 
     function closeLightbox() {
       lightbox.classList.remove('open');
