@@ -173,9 +173,7 @@ footer {
   padding: 1rem;
   background-color: #2e3b2e;
   border-top: 2px solid #6b8e23;
-}
-
-.zoomable {
+}.zoomable {
   cursor: zoom-in;
 }.lightbox {
   position: fixed;
@@ -188,9 +186,7 @@ footer {
   z-index: 9999;
 }.lightbox.open {
   display: flex;
-}
-
-.lightbox-inner {
+}.lightbox-inner {
   position: relative;
   width: 96vw;
   height: 92vh;
@@ -199,9 +195,7 @@ footer {
   background: #242924;
   border: 1px solid #6b8e23;
   border-radius: 10px;
-}
-
-.lightbox-inner img {
+}.lightbox-inner img {
   display: block;
 
   max-width: none;
@@ -213,9 +207,9 @@ footer {
   border: 1px solid #6b8e23;
   border-radius: 8px;
   background: #fff;
-}
 
-.lightbox-close {
+  
+}.lightbox-close {
   position: sticky;
   top: 8px;
   margin-left: auto;
@@ -231,4 +225,15 @@ footer {
   line-height: 36px;
   cursor: pointer;
   z-index: 1;
+}
+
+.sprint-photo {
+  width: 100%;
+  max-width: 850px;     
+  height: auto;
+  display: block;
+  margin: 12px auto 0; 
+  border: 1px solid #6b8e23;
+  border-radius: 8px;
+  background-color: #242924;
 }
