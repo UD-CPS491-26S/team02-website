@@ -175,9 +175,7 @@ footer {
   border-top: 2px solid #6b8e23;
 }
 
-/* =========================
-   Option B: Lightbox styles
-   ========================= */.zoomable {
+.zoomable {
   cursor: zoom-in;
 }.lightbox {
   position: fixed;
@@ -190,23 +188,36 @@ footer {
   z-index: 9999;
 }.lightbox.open {
   display: flex;
-}.lightbox-inner {
+}
+
+.lightbox-inner {
   position: relative;
-  max-width: min(1200px, 95vw);
-  max-height: 90vh;
-}.lightbox-inner img {
+  width: min(1400px, 96vw);
+  height: 92vh;
+  overflow: auto; 
+  padding: 12px;
+  background: #242924;
+  border: 1px solid #6b8e23;
+  border-radius: 10px;
+}
+
+.lightbox-inner img {
   display: block;
-  max-width: 95vw;
-  max-height: 90vh;
-  width: auto;
+  max-width: none;      
+  max-height: none;          
+  width: 1400px;             
   height: auto;
   border: 1px solid #6b8e23;
   border-radius: 8px;
-  background: #242924;
-}.lightbox-close {
-  position: absolute;
-  top: -12px;
-  right: -12px;
+  background: #fff;         
+}
+
+.lightbox-close {
+  position: sticky;           
+  top: 8px;
+  margin-left: auto;
+  display: block;
+
   width: 40px;
   height: 40px;
   border-radius: 999px;
@@ -216,4 +227,5 @@ footer {
   font-size: 26px;
   line-height: 36px;
   cursor: pointer;
+  z-index: 1;
 }
