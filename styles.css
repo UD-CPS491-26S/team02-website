@@ -111,7 +111,7 @@ img {
   justify-content: center;
 }.demo-video {
   width: 100%;
-  max-width: 720px;   /* makes it smaller than full card width */
+  max-width: 720px; /* makes it smaller than full card width */
   height: auto;
   display: block;
   border: 1px solid #6b8e23;
@@ -139,7 +139,7 @@ img {
 
 /* embedded PDFs */.diagram-pdf {
   width: 100%;
-  height: 900px;      /* bigger than your previous 700px */
+  height: 900px; /* bigger than your previous 700px */
   border: 0;
   display: block;
   background-color: #242924;
@@ -192,9 +192,9 @@ footer {
 
 .lightbox-inner {
   position: relative;
-  width: min(1400px, 96vw);
+  width: 96vw;
   height: 92vh;
-  overflow: auto; 
+  overflow: auto;
   padding: 12px;
   background: #242924;
   border: 1px solid #6b8e23;
@@ -203,17 +203,20 @@ footer {
 
 .lightbox-inner img {
   display: block;
-  max-width: none;      
-  max-height: none;          
-  width: 1400px;             
+
+  max-width: none;
+  max-height: none;
+
+  width: max(96vw, calc(92vh * var(--img-ar, 1)));
   height: auto;
+
   border: 1px solid #6b8e23;
   border-radius: 8px;
-  background: #fff;         
+  background: #fff;
 }
 
 .lightbox-close {
-  position: sticky;           
+  position: sticky;
   top: 8px;
   margin-left: auto;
   display: block;
